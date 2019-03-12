@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>统计结果</p>
+<p>输入信息为:{{ text }}</p>
+<p>总字数为:{{ count }}</p>
+{% for w,c in wordcount %}
+    <p>{{ w }}:{{ c }}</p>
+{% endfor %}
+{{ wordcount }}
+</body>
+</html>
