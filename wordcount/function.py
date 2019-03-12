@@ -19,3 +19,7 @@ def count(request):
             d[word] += 1
     d=sorted(d.items(),key=lambda w:w[1],reverse=False)
     return render(request,'count.html',{'count':total_count,'text':text,'wordcount':d})
+
+
+def about(request):
+    return render(request,'about.html')
